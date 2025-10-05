@@ -1,0 +1,81 @@
+.carousel
+    position: relative
+
+.rowsContainer
+    position: absolute
+    z-index: 0
+
+.row
+    width: max-content
+    display: flex
+    animation: scroll var(--speed, 300s) linear infinite
+    animation-delay: var(--delay, 0s)
+
+.rowRight
+    animation-direction: reverse
+
+.row1
+    --delay: 0s
+
+.row2
+    --delay: -6s
+
+.row3
+    --delay: -12s
+
+.pic
+    height: calc( 100vh / 3 )
+
+@keyframes scroll
+    from
+        transform: translateX(0)
+    to
+        transform: translateX(-50%)
+
+.card
+    width: 100%
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    position: absolute
+    z-index: 1
+
+.thanks
+    height: calc((100vh / 3) * 2)
+    display: flex
+    flex-direction: column
+    align-items: center
+
+h1
+    font-size: 50px
+    height: 50px
+    line-height: 50px
+    padding-top: calc(((100vh / 3) - 50px) / 2)
+    padding-bottom: calc(((100vh / 3) - 50px) / 2)
+
+h1,
+p
+    color: white
+    font-weight: 900
+    margin: 0
+    text-shadow: #000 10px 10px 10px
+
+.text
+    font-size: 40px
+    height: calc( 100vh / 3 )
+    display: flex
+    align-items: center
+    text-align: center
+
+.footer
+    display: flex
+    align-items: flex-end
+    margin-bottom: 20px
+    margin-left: 20px
+
+.logo
+    height: 100px
+
+.signature
+    font-size: 25px
