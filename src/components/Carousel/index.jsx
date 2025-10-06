@@ -98,12 +98,12 @@ export default function Carousel() {
 
             <div className={ styles.card }>
                 <div className={ styles.thanks }>
-                    <h1>Merci pour votre soutien 💚</h1>
+                    <h1>MERCI pour votre soutien <i class="fa-regular fa-heart"></i></h1>
                     <p className={ styles.text }>Votre générosité contribue<br/>à faire grandir nos enfants<br />dans un environnement bienveillant.</p>
                 </div>
                 <div className={ styles.footer }>
                     <img className={ styles.logo } src="/logo.png" alt="Logo de L'Art de Grandir" />
-                    <p className={ styles.signature }>L'Art de Grandir, ensemble.</p>
+                    <p className={ styles.signature }>L'<span>A</span>RT DE <span>G</span>RANDIR, ensemble.</p>
                 </div>
             </div>
         </div>

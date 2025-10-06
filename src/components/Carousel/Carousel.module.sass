@@ -4,6 +4,13 @@
 .rowsContainer
     position: absolute
     z-index: 0
+    &::after
+        content: ""
+        // background: rgba(34, 124, 52, 0.15)
+        background: rgba(0, 0, 0, 0.30)
+        position: absolute
+        inset: 0
+        z-index: 1
 
 .row
     width: max-content
@@ -39,7 +46,7 @@
     flex-direction: column
     justify-content: space-between
     position: absolute
-    z-index: 1
+    z-index: 2
 
 .thanks
     height: calc((100vh / 3) * 2)
@@ -49,6 +56,7 @@
 
 h1
     font-size: 50px
+    font-family: "Bodoni Moda"
     height: 50px
     line-height: 50px
     padding-top: calc(((100vh / 3) - 50px) / 2)
@@ -59,10 +67,11 @@ p
     color: white
     font-weight: 900
     margin: 0
-    text-shadow: #000 10px 10px 10px
+    text-shadow: #000 5px 5px 10px
 
 .text
     font-size: 40px
+    font-weight: 700
     height: calc( 100vh / 3 )
     display: flex
     align-items: center
@@ -79,3 +88,7 @@ p
 
 .signature
     font-size: 25px
+    font-weight: 700
+
+span
+    font-size: 32.5px
