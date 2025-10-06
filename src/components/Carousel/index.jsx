@@ -102,7 +102,7 @@ export default function Carousel() {
                     <p className={ styles.text }>Votre générosité contribue<br/>à faire grandir nos enfants<br />dans un environnement bienveillant.</p>
                 </div>
                 <div className={ styles.footer }>
-                    <img className={ styles.logo } src="/logo.png" alt="Logo de L'Art de Grandir" />
+                    <img className={ styles.logo } src="../assets/logo.png" alt="Logo de L'Art de Grandir" />
                     <p className={ styles.signature }>L'<span>A</span>RT DE <span>G</span>RANDIR, ensemble.</p>
                 </div>
             </div>
